@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+.home-container{
+    max-width: 100%;
+    /* margin-left: 10px; */
+}
+
+.hello-logo{
+    color: black; /* Text color */
+    display: inline-block;
+    font-size: small;
+    text-align: center; /* Center text horizontally */
+    margin: 2rem 49%; /* Center horizontally on the screen */
+    border: 1px solid black;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    width: fit-content;
+}
+
+.title-content{
+    text-align: center;
+}
+.sub-title{
+    margin-top: 1px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+.sub-title .title-Name{
+    color: #f90;
+}
+.left {
+    text-align: left; /* Align text to the left */
+  }
