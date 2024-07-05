@@ -30,6 +30,63 @@
 .sub-title .title-Name{
     color: #f90;
 }
+.content{
+    /* margin-top: 4rem; */
+    margin: 4rem 8rem;
+    display: inline-flex;
+    flex-direction:row;
+}
 .left {
     text-align: left; /* Align text to the left */
+  }
+.right {
+    text-align: right; /* Align text to the left */
+}
+.sub-content {
+margin: 20px; /* Add some margin around the content */
+padding: 20px; /* Add some padding inside the container */
+border: 0px; /* Add a border around the container */
+border-radius: 5px; /* Slightly round the corners */
+background-color: #f9f9f9; /* Light background color */
+max-width: 250px; /* Set a maximum width for the container */
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+.right .sub-content{
+    margin-right: 40px;
+}
+.sub-content p {
+    margin: 10px 0; /* Add vertical margin to <p> elements */
+    line-height: 1.6; /* Increase line height for better readability */
+}
+.sub-content h5 {
+    margin: 20px 0 10px; /* Add margin above and below the <h5> element */
+    font-size: 1.2em; /* Slightly increase the font size */
+    color: #333; /* Color of the <h5> text */
+}
+/* .boy-image{
+    width:25rem;
+    height: 25rem;
+} */
+.half-circle-container {
+    margin-left: 10%;
+    position: relative; /* Ensures the image can be positioned relative to this container */
+    width: 500px; /* Width of the half-circle */
+    height: 250px; /* Height of the half-circle */
+  }
+  .half-circle {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    background-color: orange; /* Background color of the half-circle */
+    border-top-left-radius: 400px; /* Half-circle radius */
+    border-top-right-radius: 400px; /* Half-circle radius */
+    border-bottom-left-radius: 0; /* No bottom radius */
+    border-bottom-right-radius: 0; /* No bottom radius */
+  }  
+  .boy-image {
+    position: absolute; /* Position the image absolutely within the container */
+    top: 50%; /* Position the image vertically at the center of the container */
+    left: 50%; /* Position the image horizontally at the center of the container */
+    transform: translate(-50%, -50%); /* Adjust the position to be exactly centered */
+    width: 10rem; /* Width of the image */
+    height: 25rem; /* Height of the image */
   }

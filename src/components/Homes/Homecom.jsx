@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import boy from'../../utils/boy.png'
 let Homecom = () => {
   return (
     <div className='home-container'>
@@ -16,7 +17,22 @@ let Homecom = () => {
           {/* <h1 className='left-quat'>''</h1> */}
           <i class="fa-solid fa-quote-left"></i>
           <p>Jenny's exceptional product design ensured our website's success. Highly recommended!</p>
-          <h5>+450</h5>
+          <h5>450+</h5>
+          <p>Client Served</p>
+        </div>
+        
+        <div className='middle'>
+          {/* <h1 className='left-quat'>''</h1> */}
+          <div class="half-circle-container">
+            <div class="half-circle"></div>
+            <img className='boy-image' src={boy} alt="Logo" />
+          </div>
+        </div>
+        <div className='right sub-content'>
+          {/* <h1 className='left-quat'>''</h1> */}
+          <i class="fa-solid fa-quote-left"></i>
+          <p>Jenny's exceptional product design ensured our website's success. Highly recommended!</p>
+          <h5>450+</h5>
           <p>Client Served</p>
         </div>
       </div>
