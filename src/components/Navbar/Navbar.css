@@ -1,156 +1,44 @@
-/* Navbar.css */
-
-.navbar {
-  background-color: #2b2a2a;
-  height: 80px;
-  width: 80%;
-  margin-left: 10%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1rem;
-  top: 0;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
-  z-index: 20;
-  border-radius: 620px;
+.navbar{
+    height: 5rem;
+    width:100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+.logo{
+    object-fit: cover;
+    height: 3rem;
+    width:3rem;
+}
+.desktopMenuListItem{
+    margin: 1rem;
+    cursor: pointer;
+}
+.desktopMenuListItem:hover{
+    color: yellow;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid yellow;
 }
 
-.nav-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 80px;
-  max-width: 1500px;
-  position: relative;
+.desktopMenuBtn{
+    background-color: white;
+    color: black;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    border-radius: 2rem;
 }
-
-.nav-logo {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: white;
-  margin-left: 10rem;
-  margin-right: 10rem;
-}
-
-.nav-logo .logo {
-  font-size: 24px;
-  font-weight: bold;
-  margin-right: 5px;
-  background-color: #f90;
-  color: white;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-}
-
-.nav-logo .name {
-  font-size: 18px;
-}
-
-.nav-logo .icon {
-  display: inline-block;
-  width: 3rem;
-  height: 3rem;
-}
-
-.nav-menu {
-  display: flex;
-  list-style: none;
-  text-align: center;
-  margin-right: 2rem;
-}
-
-.nav-links {
-  color: #fff;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  height: 100%;
-  border-bottom: 3px solid transparent;
-}
-
-.nav-item {
-  line-height: 40px;
-  margin-right: 1rem;
-}
-
-.nav-item:after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 0;
-  background: transparent;
-  transition: width 0.7s ease, background-color 0.5s ease;
-}
-
-.nav-item:hover:after {
-  width: 100%;
-  background: #eb6a00;
-}
-
-.nav-item .active {
-  color: #eb6a00;
-  border: 1px solid #eb6a00;
-}
-
-.nav-icon {
-  display: none;
-  color: #eb6a00;
-}
-
-.nav-icon .icon {
-  display: inline-block;
-  width: 2rem;
-  height: 2rem;
-}
-
-@media screen and (max-width: 455px) {
-  .nav-menu {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      border-top: 1px solid #fff;
-      position: absolute;
-      top: 80px;
-      left: -110%;
-      opacity: 1;
-      transition: all 0.5s ease;
-  }
-
-  .nav-menu.active {
-      background: #ffffff;
-      left: 0px;
-      opacity: 1;
-      transition: all 0.5s ease;
-      z-index: 1;
-  }
-  .nav-item .active {
-      color: #eb6a00;
-      border: none;
-  }
-  .nav-links {
-      padding: 1.5rem;
-      width: 100%;
-      display: table;
-  }
-
-  .nav-logo .icon {
-      width: 2rem;
-      height: 2rem;
-  }
-
-  .nav-icon {
-      display: block;
-      position: absolute;
-      top: 50%;
-      right: 0;
-      transform: translate(-100%, -50%);
-      width: 2rem;
-      height: 2rem;
-      cursor: pointer;
-      color: #eb6a00;
-  }
+.desktopMenuImg{
+    object-fit: cover;
+    height: 1rem;
+    width: 1rem;
+    margin: 0.5rem 1rem;
 }

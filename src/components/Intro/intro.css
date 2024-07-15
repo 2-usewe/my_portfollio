@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+#intro{
+    font-family: "Playfair Display", serif;
+    height: calc(100vw - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.bg{
+    position: absolute;
+    top: -2rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height:100vh;
+}
+.introContent{
+    height: 60vw;
+    width: 100vw;
+    padding:2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hello{
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+.introName{
+    color: yellow;
+}
+.introPara{
+    font-size: medium;
+    font-weight: 100;
+}
+.bagImg{
+    object-fit: cover;
+    margin:0 0.25rem;
+    height:1rem;
+}
+.btn{
+    align-items: center;
+    display: flex;
+    background-color: white;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+}
+@media screen and (maxwi) {
+    
+}
+

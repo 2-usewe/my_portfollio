@@ -1,91 +1,24 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import "./Navbar.css";
-// import { CodeIcon, HamburgetMenuClose, HamburgetMenuOpen } from "./Icons";
-
-function NavBar() {
-    const [click, setClick] = useState(false);
-
-    const handleClick = () => setClick(!click);
-    return (
-        <>
-            <nav className="navbar">
-                <div className="nav-container">
-
-                    <ul className={click ? "nav-menu active" : "nav-menu"}>
-                        
-                        <li className="nav-item">
-                            <NavLink
-                                exact
-                                to="/"
-                                activeClassName="active"
-                                className="nav-links"
-                                onClick={handleClick}
-                            >
-                                Home
-                            </NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink
-                                exact
-                                to="/about"
-                                activeClassName="active"
-                                className="nav-links"
-                                onClick={handleClick}
-                            >
-                                About
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink exact to="/" className="nav-logo">
-                                <span className="logo">N</span>
-                                <span className="name">ame</span>
-                                {/* <i className="fas fa-code"></i> */}
-                                <span className="icon">
-                                    {/* <CodeIcon /> */}
-                                </span>
-                            </NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink
-                                exact
-                                to="/blog"
-                                activeClassName="active"
-                                className="nav-links"
-                                onClick={handleClick}
-                            >
-                                Blog
-                            </NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink
-                                exact
-                                to="/contact"
-                                activeClassName="active"
-                                className="nav-links"
-                                onClick={handleClick}
-                            >
-                                Contact Us
-                            </NavLink>
-                        </li>
-                    </ul>
-                    {/* <div className="nav-icon" onClick={handleClick}> */}
-                    {/* <i className={click ? "fas fa-times" : "fas fa-bars"}></i> */}
-
-                    {/* {click ? ( */}
-                    {/* <span className="icon"> */}
-                    {/* <HamburgetMenuOpen />{" "} */}
-                    {/* </span> */}
-                    {/* ) : ( */}
-                    {/* <span className="icon"> */}
-                    {/* <HamburgetMenuClose /> */}
-                    {/* </span> */}
-                    {/* )} */}
-                    {/* </div> */}
-                </div>
-            </nav>
-        </>
-    );
+import React from 'react'
+import './navbar.css';
+import logo from '../../utils/star.png'
+import { Link } from 'react-scroll';
+import contactImg from '../../utils/contact.png';
+function Navbar() {
+  return (
+    <nav className="navbar">
+        <img src={logo} alt="logo" className="logo" />
+        <div className="desktoMenu">
+            <Link className="desktopMenuListItem">Home</Link>
+            <Link className="desktopMenuListItem">About</Link>
+            <Link className="desktopMenuListItem">Portfollio</Link>
+            <Link className="desktopMenuListItem">Client</Link>
+        </div>
+        <button className="desktopMenuBtn">
+            <img src={contactImg} alt="contact" className="desktopMenuImg" />
+            Contact Me
+        </button>
+    </nav>
+  )
 }
 
-export default NavBar;
+export default Navbar
