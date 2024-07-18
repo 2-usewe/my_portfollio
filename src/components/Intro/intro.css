@@ -11,14 +11,14 @@
 
 .bg{
     position: absolute;
-    top: -2rem;
+    top: -4rem;
     right: 0;
     z-index: -1;
     object-fit: cover;
     height:100vh;
 }
 .introContent{
-    height: 60vw;
+    height: 65vw;
     width: 100vw;
     padding:2rem;
     font-size: 3rem;
@@ -52,7 +52,16 @@
     border: none;
     border-radius: 2rem;
 }
-@media screen and (maxwi) {
-    
+@media screen and (max-width:840px) {
+    .bg{
+        right: -5vw;
+        height:50vh;
+    }
+    .introContent{
+        font-size: 10vw;
+    }
+    .hello{
+        font-size: 4.5vw;
+    }
 }
 
