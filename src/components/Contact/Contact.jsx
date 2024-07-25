@@ -1,9 +1,13 @@
 import React from 'react'
 import './contact.css';
-import walmart from '../../utils/icons8-walmart-48.png';
-import facebook from '../../utils/Facebook.png';
-import adobe from '../../utils/icons8-adobe-48.png';
-import microsoft from '../../utils/icons8-microsoft-48.png';
+import walmart from '../../utils/walmart-img.png';
+import facebook from '../../utils/facebook-img.webp';
+import adobe from '../../utils/adobe-img.png';
+import microsoft from '../../utils/microsoft-img.jpg';
+import instaicon from '../../utils/instagram-icon.png';
+import facebookicon from '../../utils/facebook-icon.png';
+import linkedinicon from '../../utils/linkedin-icon.webp';
+import youtubeicon from '../../utils/youtube-icon.webp'
 function Contact() {
   return (
     <section id="contactPage">
@@ -19,8 +23,21 @@ function Contact() {
         </div>
       </div>
       <div id="contact">
-        <h2 className="contactPageTitle">Contact Me</h2>
-        <p className="contactDesc"></p>
+        <h2 className="clientPageTitle">Contact Me</h2>
+        <span className="contactDesc">Please fill out the form below to discuss any work oppertunities.</span>
+        <form className="contactForm">
+          <input type="text" className="name" placeholder='Your Name' />
+          <input type="text" className="email" placeholder='Your Email' />
+          <textarea name="message" rows="5" className='msg' placeholder='Your Message'></textarea>
+          <button className='submitBtn' type='submit' value='Send'>Submit</button>
+          <div className="links">
+            <img src={facebookicon} alt="" className="link" />
+            <img src={instaicon} alt="" className="link" />
+            <img src={linkedinicon} alt="" className="link" />
+            <img src={youtubeicon} alt="" className="link" />
+          </div>
+        </form>
+        
       </div>
     </section>
   )
