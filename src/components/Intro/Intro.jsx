@@ -8,8 +8,8 @@ function Intro() {
     <section id="intro">
         <div className="introContent">
             <span className="hello">Hello,</span>
-            <span className="introText">I'm <span className="introName">Abhijit</span><br/>Web Developer</span>
-            <p className="introPara">I am a skilled web developer with experience in web application and APIs.</p>
+            <span className="introText">I'm <span className="introName">Abhijit Swain</span><br/>Node js Developer</span>
+            <p className="introPara">Experienced Node.js developer with 3 years of expertise in building efficient, scalable, and secure backend solutions, specializing in API development, database integration, and real-time applications.</p>
             <Link><button className="btn"><img className='bagImg' src={hireImg} alt="hire me"  />Hire Me</button></Link>
         </div>
         <img src={bg} alt="profile" className="bg" />

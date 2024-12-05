@@ -19,7 +19,7 @@
 .worksText{
     font-size: 1rem;
     font-weight: 400;
-    max-width: 51rem;
+    /* max-width: 51rem; */
     padding: 0 2rem;
     margin-bottom: 2rem;
     max-width: 45rem;
