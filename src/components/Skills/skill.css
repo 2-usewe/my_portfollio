@@ -48,6 +48,7 @@
     font-size: 0.8rem;
     font-weight: 200;
     margin-top: 0.6em;
+    text-align: justify;
 }
 
 @media screen and (max-width:720px) {
@@ -66,5 +67,20 @@
     .skillBarImg{
         height: 2.25rem;
         width: 2.25rem
+    }
+    .skillBarText {
+        font-size: 0.8rem;
+        font-weight: 200;
+        /* margin-top: 0.6em; */
+        text-align: justify;
+    
+        /* Add these properties */
+        word-wrap: break-word; /* Ensures long words break onto the next line */
+        overflow-wrap: break-word; /* Modern equivalent for long text breaking */
+        display: -webkit-box;
+        /* -webkit-line-clamp: 3; /* Limits to 3 lines */
+        -webkit-box-orient: vertical; 
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }

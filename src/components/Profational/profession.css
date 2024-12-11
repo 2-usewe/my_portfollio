@@ -101,4 +101,117 @@
     border-radius: 5px;
     font-size: 14px;
   }
+
+  /* Small devices (max-width: 720px) */
+@media screen and (max-width: 720px) {
+  #profession {
+    padding: 0 0.5rem;
+  }
+
+  .clientPageTitle {
+    font-size: 2.5rem; /* Reduce font size */
+    padding-top: 2rem;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .header h2 {
+    font-size: 16px;
+  }
+
+  .experience-section h3,
+  .tools-section h3 {
+    font-size: 18px;
+  }
+
+  .experience-card {
+    padding: 10px;
+  }
+
+  .experience-card h4 {
+    font-size: 16px;
+  }
+
+  .experience-card ul {
+    font-size: 14px; /* Smaller font for list items */
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .company-content {
+    gap: 2px;
+  }
+
+  .company-content .company-logo {
+    max-width: 16px; /* Adjust size of logos */
+    max-height: 14px;
+  }
+
+  .tools-section .tools {
+    gap: 8px;
+  }
+
+  .tool-badge {
+    font-size: 12px; /* Smaller badge text */
+    padding: 4px 8px;
+  }
+}
+
+/* Extra Small devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  #profession {
+    padding: 0 0.5rem;
+    width: 100%; /* Adjust width for smaller devices */
+  }
+
+  .clientPageTitle {
+    font-size: 2rem; /* Further reduce font size */
+    padding-top: 1.5rem;
+  }
+
+  .header h1 {
+    font-size: 18px;
+  }
+
+  .header h2 {
+    font-size: 14px;
+  }
+
+  .experience-section h3,
+  .tools-section h3 {
+    font-size: 16px;
+  }
+
+  .experience-card h4 {
+    font-size: 14px;
+  }
+
+  .experience-card ul {
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .company-content {
+    flex-direction: column; /* Stack logo and text */
+    gap: 5px;
+  }
+
+  .company-content .company-logo {
+    max-width: 14px;
+    max-height: 12px;
+  }
+
+  .tools-section .tools {
+    gap: 6px;
+  }
+
+  .tool-badge {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+}
+
   
