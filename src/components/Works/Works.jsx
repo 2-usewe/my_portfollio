@@ -3,9 +3,9 @@ import './works.css'
 import pr1 from '../../utils/pro1.jpg'
 import pr2 from '../../utils/pro2.jpg'
 import pr3 from '../../utils/pro3.jpg'
-import pr4 from '../../utils/pro7.jpg'
-import pr5 from '../../utils/pro5.jpg'
-import pr6 from '../../utils/pro6.jpg'
+// import pr4 from '../../utils/pro7.jpg'
+// import pr5 from '../../utils/pro5.jpg'
+// import pr6 from '../../utils/pro6.jpg'
 
 function Works() {
   return (
