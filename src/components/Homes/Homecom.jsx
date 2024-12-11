@@ -2,6 +2,16 @@ import React from 'react';
 import './Home.css';
 import boy from'../../utils/boy.png'
 let Homecom = () => {
+
+  const handleDownload = () => {
+    // You can simply link to the file in the public folder
+    const link = document.createElement('a');
+    link.href = 'src/utils/Abhijitrusume1.pdf';  // Path relative to the public folder
+    link.download = 'Abhijitrusume1.pdf';  // Optional: specify a download file name
+    link.click();
+  };
+
+
   return (
     <div className='home-container'>
       <div className='title-content'>

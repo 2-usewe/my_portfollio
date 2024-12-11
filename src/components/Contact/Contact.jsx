@@ -1,13 +1,13 @@
 import React, { useRef } from 'react'
 import './contact.css';
-import walmart from '../../utils/walmart-img.png';
-import facebook from '../../utils/facebook-img.webp';
-import adobe from '../../utils/adobe-img.png';
-import microsoft from '../../utils/microsoft-img.jpg';
+// import walmart from '../../utils/walmart-img.png';
+// import facebook from '../../utils/facebook-img.webp';
+// import adobe from '../../utils/adobe-img.png';
+// import microsoft from '../../utils/microsoft-img.jpg';
 import instaicon from '../../utils/instagram-icon.png';
 import facebookicon from '../../utils/facebook-icon.png';
 import linkedinicon from '../../utils/linkedin-icon.webp';
-import youtubeicon from '../../utils/youtube-icon.webp'
+import github from '../../utils/icons8-github-logo-94.png'
 import emailjs from '@emailjs/browser';
 
 function Contact() {
@@ -33,10 +33,8 @@ function Contact() {
   };
   return (
     <section id="contactPage">
-      <div id="client">
+      {/* <div id="client">
         <h2 className="clientPageTitle">Professional Experience</h2>
-        {/* <p className="clientDesc">I have had the upertunity to work with a diverse group of companies. 
-          Some of the notable companies i have worked with includes</p> */}
         <ul className="clientDesc">
           <li>Designed and implemented RESTful APIs using Node.js, Express.js, and Sails.js</li>
           <li>Worked with MySQL and MongoDB to develop and maintain databases and data models</li>
@@ -52,7 +50,7 @@ function Contact() {
           <img src={walmart} alt="walmart" className="clientImg" />
           <img src={facebook} alt="facebook" className="clientImg" />
         </div>
-      </div>
+      </div> */}
       <div id="contact">
         <h2 className="clientPageTitle">Contact Me</h2>
         <span className="contactDesc">Please fill out the form below to discuss any work oppertunities.</span>
@@ -62,13 +60,21 @@ function Contact() {
           <textarea name="message" rows="5" className='msg' placeholder='Your Message'></textarea>
           <button className='submitBtn' type='submit' value='Send'>Submit</button>
           <div className="links">
-            <img src={facebookicon} alt="" className="link" />
-            <img src={instaicon} alt="" className="link" />
-            <img src={linkedinicon} alt="" className="link" />
-            <img src={youtubeicon} alt="" className="link" />
+            <a href="https://www.facebook.com/abhijit.chintu.77?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
+              <img src={facebookicon} alt="facebook" className="link" />
+            </a>
+            <a href="https://www.instagram.com/abhi_jit_swain19/profilecard/?igsh=MTluanQ5aDlvOGxxdQ==" target="_blank" rel="noopener noreferrer">
+              <img src={instaicon} alt="instagram" className="link" />
+            </a>
+            <a href="https://www.linkedin.com/in/abhijit-swain-b09a92209/" target="_blank" rel="noopener noreferrer">
+              <img src={linkedinicon} alt="linkedin" className="link" />
+            </a>
+            <a href="https://github.com/2-usewe" target="_blank" rel="noopener noreferrer">
+              <img src={github}  alt="github" className="link" />
+            </a>
           </div>
         </form>
-        
+
       </div>
     </section>
   )
